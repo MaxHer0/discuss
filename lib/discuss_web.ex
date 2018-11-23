@@ -17,6 +17,10 @@ defmodule DiscussWeb do
   and import those modules here.
   """
 
+  # ici il defni une macro qui rend plus facile quand tu creer un controller
+  # tu ecris use DiscussWeb, :controller
+  # ca entre ici et ca fais tous ce que tu vois entre quote do
+  # la function render viens du module Phoenix.Controller...
   def controller do
     quote do
       use Phoenix.Controller, namespace: DiscussWeb
